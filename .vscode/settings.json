@@ -24,5 +24,8 @@
     // Use Ruff to organize and sort imports in Python files
     // The "explicit" value means this action needs to be manually triggered or confirmed
     "source.organizeImports.ruff": "explicit"
-  }
+  },
+  "python.analysis.extraPaths": [
+    "./external"
+  ]
 }

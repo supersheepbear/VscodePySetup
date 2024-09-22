@@ -5,25 +5,13 @@
             "name": "Python: Run main.py",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/src/main.py",
+            "module": "main_package.main",
+            "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "args": ["--name", "John"],
             "envFile": "${workspaceFolder}/.env",
             "env": {
-                "PYTHONPATH": "${workspaceFolder}/src"
-            }
-        },
-        {
-            "name": "Python: Debug main.py",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${workspaceFolder}/src/main.py",
-            "console": "integratedTerminal",
-            "args": ["--name", "John"],
-            "envFile": "${workspaceFolder}/.env",
-            "justMyCode": true,
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}/src"
+                "PYTHONPATH": "${workspaceFolder}/src;${workspaceFolder}/external"
             }
         }
     ]
