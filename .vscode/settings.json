@@ -1,0 +1,28 @@
+{
+  // Enable terminal activation for virtual environments
+  // This setting automatically activates the Python virtual environment when opening a terminal in VS Code
+  "python.terminal.activateEnvironment": true,
+
+  // Load environment variables from .env file
+  // This setting specifies the path to the .env file containing environment variables for the project
+  "python.envFile": "${workspaceFolder}/.env",
+
+  // Automatically format code when saving a file
+  // This ensures consistent code formatting across the project
+  "editor.formatOnSave": true,
+
+  // Set the default formatter for the project
+  // In this case, it's set to use the Ruff formatter for Python files
+  "editor.defaultFormatter": "charliermarsh.ruff",
+
+  // Configure actions to be performed automatically when saving a file
+  "editor.codeActionsOnSave": {
+    // Use Ruff to fix all auto-fixable issues in the code
+    // The "explicit" value means this action needs to be manually triggered or confirmed
+    "source.fixAll.ruff": "explicit",
+
+    // Use Ruff to organize and sort imports in Python files
+    // The "explicit" value means this action needs to be manually triggered or confirmed
+    "source.organizeImports.ruff": "explicit"
+  }
+}
